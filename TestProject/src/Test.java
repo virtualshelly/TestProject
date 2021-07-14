@@ -2,7 +2,11 @@
 public class Test {
 
 	public static void main(String[] args) {
-		
+		//demo();
+		System.out.println("Git is fun!");
+	}
+
+	public static void demo() {
 		// testing try catch
 		try {
 			System.out.println("Hello World!");
@@ -15,7 +19,9 @@ public class Test {
 			System.out.println("Cause is " +exp.getCause());
 			exp.printStackTrace();
 		}
-
+		finally {
+			System.out.println("I am inside the finally block");
+		}
 	}
-
+	
 }
