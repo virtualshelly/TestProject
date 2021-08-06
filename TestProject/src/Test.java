@@ -54,6 +54,7 @@ public class Test {
 
         // get the actual value of the title
         actualTitle = driver.getTitle();
+        
         try {
         	// if else pass or fail page title
         	if (actualTitle.contentEquals(expectedTitle)){
