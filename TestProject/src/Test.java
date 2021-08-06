@@ -20,7 +20,7 @@ public class Test {
 		String expectedTitle = "omayo (QAFox.com)";
 		String addedText = "I love web pages!";
 		
-        // using get() method, launch browser and navigate to URL variable
+        // using get() method, launch browser then navigate to URL variable
         driver.get(baseUrl);
         
         //timeout exception
