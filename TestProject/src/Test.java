@@ -36,6 +36,7 @@ public class Test {
         	System.out.println(toe.toString());
         }
         
+       //generic exception
         try { 
         	//find the text area element again and get the text
         	WebElement textAreaTest = driver.findElement(By.id("ta1"));
