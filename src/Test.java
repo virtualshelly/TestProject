@@ -6,6 +6,8 @@ import org.openqa.selenium.*;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+//written by Shelly Falconer
+
 public class Test {
 
 	public static void main(String[] args) throws Exception {
