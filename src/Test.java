@@ -59,7 +59,7 @@ public class Test {
         	System.out.println(ioe.toString());
         }
         
-        //generic exception to find Selenium Tutorial link
+        //generic exception to find hidden button
         try {
         	driver.findElement(By.id("hbutton"));
         	//report hidden button was found
