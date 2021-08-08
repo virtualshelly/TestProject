@@ -6,6 +6,7 @@ import org.openqa.selenium.*;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+
 //written by Shelly Falconer
 
 public class Test {
@@ -25,7 +26,7 @@ public class Test {
         //using get() method, launch browser then navigate to URL variable
         driver.get(baseUrl);
         
-        //timeout exception
+        //timeout exception to add text
         try {
         	//set the expectation to wait until the element is seen
         	myWaitVar.until(ExpectedConditions.visibilityOfElementLocated(By.id("ta1")));
@@ -38,7 +39,7 @@ public class Test {
         	System.out.println(toe.toString());
         }
         
-       //generic exception
+       //generic exception to copy text for compare
         try { 
         	//find the text area element again and get the text
         	WebElement textAreaTest = driver.findElement(By.id("ta1"));
@@ -57,10 +58,20 @@ public class Test {
         } catch(Exception ioe) {
         	System.out.println(ioe.toString());
         }
+        
+        //generic exception to find Selenium Tutorial link
+        try {
+        	driver.findElement(By.id("hbutton"));
+        	//report hidden button was found
+        	System.out.println("Hidden was button found!");
+        } catch(Exception ioe) {
+        	System.out.println(ioe.toString());
+        }
 
         // get the actual value of the title
         actualTitle = driver.getTitle();
         
+        //generic exception to compare actual to expected title
         try {
         	// if else pass or fail page title
         	if (actualTitle.contentEquals(expectedTitle)){
