@@ -43,6 +43,10 @@ public class Test {
         	//find the text area element again and get the text
         	WebElement textAreaTest = driver.findElement(By.id("ta1"));
         	String text = textAreaTest.getAttribute("value");
+        	
+        	//compare was failing b/c new line before I
+        	text = text.replaceAll("[\\n]", "");
+        	//System.out.println("text now = " + text);
 
         	//test the addedText was added
         		if (text.contentEquals(addedText)){
